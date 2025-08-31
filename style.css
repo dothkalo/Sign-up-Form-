@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'Norse Bold';
+  src: url('fonts/Norse-Bold.otf') format('opentype'); /* or correct format */
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between; /* better than align-content */
+  margin: 0;
+}
+
+
+/* Splash panel styles */
+
+    
+.left {
+    flex: 1.3;
+    height: 100vh;
+    display: flex;
+    position: relative; /* important for absolute children */
+    background-image: url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.transparent_box {
+    position: absolute;
+    top: 30%;
+    left:50%;
+    transform: translate(-50%, -50%); /* perfectly centers */
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.459);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.text_odin{
+    color: rgb(255, 255, 255);
+    font-family: 'Norse Bold';
+    font-size: 120px;
+    overflow: hidden;
+    
+}
+.ODIN {
+    max-height: 150px;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    
+}
+
+.belowtext{
+    color: white;
+    display: flex;
+    gap: 3.5px;
+    position: absolute;
+    top: 98%;
+    
+}
+.und{
+    text-decoration: underline;
+}
+
+.right {
+  height: 100vh;
+  width: 70%; /* adjusted */
+  display: flex;
+  flex-direction: column;
+  background-color: #F9FAFB;
+}
+
+.text_presentation{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 13%;
+    margin-left: 5%;
+    margin-bottom: 6%;
+}
+.Signup_box{
+    background-color: white;
+    box-shadow: black;
+    -webkit-box-shadow: 0px 13px 18px 0px rgba(0,0,0,0.35); 
+box-shadow: 0px 13px 18px 0px rgba(0,0,0,0.35);
+}
+.Title{
+    margin-left: 5%;
+    margin-top: 2%;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form{
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+input{
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.haha{
+    margin-left: 5%;
+    display:flex;
+    gap: 3px;
+    font-weight: bold;
+}
+.green{
+    color: #596D48
+}
+.ro1{
+display: flex;
+gap: 40px;
+flex-direction: row;
+margin-bottom: 20px;
+}
+
+.roro{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    width: 350px;
+    height: 60px;
+    border-width: 0;
+    border-radius: 10px;
+    background-color: #596D48;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 13px 18px 0px rgba(0,0,0,0.35); 
+box-shadow: 0px 13px 18px 0px rgba(0,0,0,0.35);
+}
